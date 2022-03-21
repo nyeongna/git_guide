@@ -2,7 +2,7 @@
 ## 깃 사용시 궁금했던 점 정리
 
 ## Conflict이 나는 기준은 무엇인가?
-## [ISSUE] 
+### [이슈] 
 - Remote reposit A 생성 →
 - remote A 에서 a.txt 생성 후 commit →
 - local 에서 reposit A clone →
@@ -12,4 +12,4 @@
 -- conflict이 난다면 local A에 없고 remote A에 존재하는 b.txt 때문인가? 아니면 반대인 c.txt 때문인가?
 
 ### [답변]
---ㅁㄴㅇ
+- 
