@@ -9,7 +9,16 @@
 
 ### [답변]
 - git push의 정확한 의미가 무엇인가?
->- git push는 정확하게 말하면, **push를 하려는** branch의 commit 상황을 **push를 당하는** branch에 밀어넣는 액션이다
+>- git push는 정확하게 말하면, *push를 하려는* branch의 commit 상황을 *push를 당하는* branch에 밀어넣는 액션이다. <br>
+밀어넣을 때는 당연히 두 branch의 전체적인 commit 상황이 같아야 하고, <br>
+같은 파일에 대해서 commit 상황이 다른 파일이 있다면 *push 하려는* branch가 우선시 된다. 따라서, push 당하는 branch는 변경점이 있으면 안된다 (있으면 conflict)
+conflict이 나는 이유는 git이 같은 파일에 대한 다른 commit 중 어느 것을 따라야 하는지 알 수 없기 때문이다.
+
+- git pull의 정확한 의미가 무엇인가?
+>- git pull은 정확히 git fetch + merge 이다. git fecth는 단순히 소스 reposit에서 commit 들을 가져오는 행위에 해당하고 <br>
+merge는 가져온 commit과 합치려는 branch의 commit을 한군데로 합치는 것을 의미한다. (합치는 과정에서 git이 헷갈릴만한 상황이 발생하면 issue/conflict 발생) <br>
+다시 말해, git pull 은 소스 branch가 주권이 있어서 여기에 기준을 맞춰서 merge를 진행한다. (동일 파일에 대해 변경점이 있다면 소스 branch의 변경점을 따른다)
+
 ## Conflict이 나는 기준은 무엇인가?
 ### [이슈] 
 >- Remote reposit A 생성 →
