@@ -1,8 +1,6 @@
-# 📖 깃 사용 가이드 (git_guide)
-## 깃 사용시 궁금했던 점 정리
+# 📖 깃  가이드 (git_guide)
 
-
-## git push / pull
+## git push / pull 쉽게 설명하기
 ### [이슈]
 - git push의 정확한 의미가 무엇인가?
 - git pull의 정확한 의미가 무엇인가?
