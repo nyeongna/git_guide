@@ -2,7 +2,7 @@
 ## 깃 사용시 궁금했던 점 정리
 
 ## Conflict이 나는 기준은 무엇인가?
-### [ISSUE] 
+## [ISSUE] 
 - Remote reposit A 생성 →
 - remote A 에서 a.txt 생성 후 commit →
 - local 에서 reposit A clone →
